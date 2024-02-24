@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/output.css">
+  <style>
+  @media (max-width: 1024px) and (min-width: 1024px) {
+  #projectgrid{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #relative{
+    width: calc(25% - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  .sm\:flex {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .w-full {
+    margin-right: 10px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <header class="fixed w-full top-0 bg-white z-10">
+    <nav class="container mx-auto px-4 lg:px-8 flex justify-between items-center">
+      <a href="#home" class="py-4 inline lg:mr-8 hover:bg-gray-300 text-xl font-sans"><span class="font-bold">BR</span>
+        Architect</a>
+      <ul class="flex font-sans text-xl">
+        <li class="mx-4 lg:mx-8 hover:bg-gray-300"><a href="#project">Projects</a></li>
+        <li class="mx-4 lg:mx-8 hover:bg-gray-300"><a href="#about">About</a></li>
+        <li class="mx-4 lg:mx-8 hover:bg-gray-300 sm:mr-2"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="relative ml-2">
+      <img src="https://www.w3schools.com/w3images/architect.jpg" alt="Architect Image">
+      <div class="absolute inset-0 flex items-center justify-center text-white text-4xl ">
+        <span class="bg-black bg-opacity-70 font-bold  p-4 mx-3">BR</span> Architect
+      </div>
+    </div>
+  </section>
+  <section id="project">
+    <h2 class="text-3xl mt-11 pt-3 mb-5 ml-7">Projects</h2>
+    <hr class="mb-10">
+    <div id="projectgrid" class="flex flex-wrap justify-center sm:justify-evenly">
+      <div id="relative" class="relative w-full sm:w-80 mb-10">
+        <div class="absolute left-0 top-0 text-xl bg-black text-white py-2 px-2">Summer House</div>
+        <img src="https://www.w3schools.com/w3images/house5.jpg" class="w-full">
+      </div>
+      <div id="relative" class="relative w-full sm:w-80 mb-10">
+        <div class="absolute left-0 top-0 text-xl bg-black text-white py-2 px-2">Brick House</div>
+        <img src="https://www.w3schools.com/w3images/house2.jpg" class="w-full">
+      </div>
+      <div id="relative" class="relative w-full sm:w-80 mb-10">
+        <div class="absolute left-0 top-0 text-xl bg-black text-white py-2 px-2">Renovated</div>
+        <img src="https://www.w3schools.com/w3images/house3.jpg" class="w-full">
+      </div>
+      <div id="relative" class="relative w-full sm:w-80 mb-10">
+        <div class="absolute left-0 top-0 text-xl bg-black text-white py-2 px-2">Barn House</div>
+        <img src="https://www.w3schools.com/w3images/house4.jpg" class="w-full">
+      </div>
+      <div id="relative" class="relative w-full sm:w-80 mb-10">
+        <div class="absolute left-0 top-0 text-xl bg-black text-white py-2 px-2">Summer House</div>
+        <img src="https://www.w3schools.com/w3images/house2.jpg" class="w-full">
+      </div>
+      <div id="relative" class="relative w-full sm:w-80 mb-10">
+        <div class="absolute left-0 text-xl bg-black py-2 px-2 text-white top-0">Brick House</div>
+        <img src="https://www.w3schools.com/w3images/house5.jpg" class="w-full">
+      </div>
+      <div id="relative" class="relative w-full sm:w-80 mb-10">
+        <div class="absolute left-0 top-0 text-xl bg-black py-2 px-2 text-white">Renovated</div>
+        <img src="https://www.w3schools.com/w3images/house4.jpg" class="w-full">
+      </div>
+      <div id="relative" class="relative w-full sm:w-80 mb-10">
+        <div class="absolute left-0 top-0 text-xl bg-black py-2 px-2 text-white">Barn House</div>
+        <img src="https://www.w3schools.com/w3images/house3.jpg" class="w-full">
+      </div>
+    </div>
+
+
+  </section>
+  <section id="about" class="ml-7">
+    <h2 class="text-3xl mt-11 pt-3 mb-5">About</h2>
+    <hr class="mb-10">
+    <p class="text-lg pb-10">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci
+      didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerci
+      tation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupid
+      atat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adi
+      piscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut en
+      im ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <div class="sm:flex justify-evenly flex-wrap">
+      <div class="w-full sm:w-80 mb-8">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" class="w-full">
+        <h1 class="text-3xl my-4">John Doe</h1>
+        <h2 class="text-gray-400 mb-4">CEO & Founder</h2>
+        <p class="mb-4">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+        </p>
+        <button class="bg-gray-200 w-full h-11 my-4 cursor-pointer hover:bg-gray-300">Contact</button>
+      </div>
+      <div class="w-full sm:w-80 mb-8">
+        <img src="https://www.w3schools.com/w3images/team1.jpg" class="w-full">
+        <h1 class="text-3xl my-4">Jane Doe</h1>
+        <h2 class="text-gray-400 mb-4">Architect</h2>
+        <p class="mb-4">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+        </p>
+        <button class="bg-gray-200 w-full h-11 my-4 cursor-pointer hover:bg-gray-300">Contact</button>
+      </div>
+      <div class="w-full sm:w-80 mb-8">
+        <img src="https://www.w3schools.com/w3images/team3.jpg" class="w-full">
+        <h1 class="text-3xl my-4">Mike Ross</h1>
+        <h2 class="text-gray-400 mb-4">Architect</h2>
+        <p class="mb-4">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+        </p>
+        <button class="bg-gray-200 w-full h-11 my-4 cursor-pointer hover:bg-gray-300">Contact</button>
+      </div>
+      <div class="w-full sm:w-80 mb-8">
+        <img src="https://www.w3schools.com/w3images/team4.jpg" class="w-full">
+        <h1 class="text-3xl my-4">Dan Star</h1>
+        <h2 class="text-gray-400 mb-4">Architect</h2>
+        <p class="mb-4">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+        </p>
+        <button class="bg-gray-200 w-full h-11 my-4 cursor-pointer hover:bg-gray-300">Contact</button>
+      </div>
+    </div>
+
+  </section>
+  <section id="contact" class="ml-7 mb-10">
+    <h2 class="text-3xl mt-11 pt-3 mb-5">Contact</h2>
+    <hr class="mb-10">
+    Let's get in touch and talk about your next project
+    <form>
+
+      <input type="text" class="my-3 p-2 w-full border" placeholder="Name">
+      <input type="email" class="mb-3 p-2 w-full border" placeholder="Email">
+      <input type="text" class="mb-3 p-2 w-full border" placeholder="Subject">
+      <input type="text" class="mb-3 p-2 w-full border" placeholder="Comment">
+      </div>
+
+
+      <button class="bg-black text-white text-xl p-2">SEND MESSAGE</button>
+    </form>
+  </section>
+  <img src="https://www.w3schools.com/w3images/map.jpg" class=" ml-4">
+  <footer class="bg-black text-white text-xl text-center p-7 w-full">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" class="underline" target="_blank">w3.css</a>
+  </footer>
+
+
+
+</body>
+
+</html>
